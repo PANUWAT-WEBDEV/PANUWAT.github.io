@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>CALCULATE | BMI</title>
+    <link rel="icon" hrel="BMIICON.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <header>
+        <div class="container">
+            <div class="con">
+                <h1>คำนวณ BMI<h1>
+                        <input id="weight" type="text" placeholder="ใส่น้ำหนัก">
+                        <input id="height" type="text" placeholder="ใส่ส่วนสูง">
+                        <p id="result">ผลลัพธ์ BMI</p>
+                        <p id="Test_results">ผลทดสอบ</p>
+                        <div class="btn">
+                            <button onclick="BMI(document.getElementById('weight').value,
+                            document.getElementById('height').value), document.getElementById('Test_results').bmi">คำนวณค่าBMI</button>
+                            <button onclick="resetFields()">รีเซ็ต</button>
+                        </div>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
